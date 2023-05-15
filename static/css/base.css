@@ -1,6 +1,42 @@
-body,
+/* -------------------------------- Full app styling */
+
+/* -------------------------------- Visualizer */
+
+/* * {
+    outline: 1px solid #f00 !important;
+} */
+
+/* -------------------------------- Visualizer */
+
 html {
-    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* -------------------------------- Select styling */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 /* The hero image */
@@ -9,13 +45,15 @@ html {
     background-image: url("https://scoliadarts.com/wp-content/uploads/2020/10/scoliahome_pro_fooldal.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 50vh;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: 0;
+    border: 0;
 }
 
 /* Place text in the middle of the image */
